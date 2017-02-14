@@ -1,0 +1,57 @@
+[
+    {
+        "userId": 1,
+        "id": 1,
+        "notification" : {
+            "category" : "info",
+            "title" : "Info",
+            "body" : "Here is some info"
+        },
+        "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+        "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+    },
+    {
+        "userId": 2,
+        "id": 2,
+        "notification" : {
+            "category" : "info",
+            "title" : "Info",
+            "body" : "Here is some info"
+        },
+        "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+        "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+    },
+    {
+        "userId": 3,
+        "id": 3,
+        "notification" : {
+            "category" : "warning",
+            "title" : "Warning",
+            "body" : "There is some warning"
+        },
+        "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+        "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+    },
+    {
+        "userId": 4,
+        "id": 4,
+        "notification" : {
+            "category" : "error",
+            "title" : "Error",
+            "body" : "There is some error"
+        },
+        "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+        "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+    },
+    {
+        "userId": 5,
+        "id": 5,
+        "notification" : {
+            "category" : "error",
+            "title" : "Error",
+            "body" : "There is some error"
+        },
+        "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+        "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+    }
+]

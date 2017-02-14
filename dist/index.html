@@ -1,0 +1,105 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>Code example</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+</head>
+<body data-ng-app="App">
+    <header class="header" data-ng-controller="Nav">
+        <div class="holder" data-ng-class="{ active: nav }">
+            <h1 class="logo">
+                <a href="/">Logo</a>
+            </h1>
+            <a href="/" class="navigation-opener" data-ng-click="openClose($event)"><span>open/close</span></a>
+            <ul class="navigation">
+                <li><a href="/">Menu Item 1</a>
+                    <ul>
+                        <li><a href="/">Sub-item1</a></li>
+                        <li><a href="/">Sub-item2</a></li>
+                        <li><a href="/">Sub-item3</a>
+                            <ul>
+                                <li><a href="/">sub-sub-item1</a></li>
+                                <li><a href="/">sub-sub-item2</a></li>
+                                <li><a href="/">sub-sub-item3</a></li>
+                                <li><a href="">sub-sub-item4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="last"><a href="/">Menu Item 2</a>
+                    <ul>
+                        <li><a href="/">Sub-item1</a></li>
+                        <li><a href="/">Sub-item2</a></li>
+                        <li><a href="/">Sub-item3</a>
+                            <ul>
+                                <li><a href="/">sub-sub-item1</a></li>
+                                <li><a href="/">sub-sub-item2</a></li>
+                                <li><a href="/">sub-sub-item3</a></li>
+                                <li><a href="/">sub-sub-item4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="wrapper">
+        <main class="main">
+            <div class="holder">
+                <section class="frame">
+                    <div class="content">
+                        <data-ng-view></data-ng-view>
+                        <div class="btn-holder">
+                            <a href="#" class="btn" data-modal-open="1">Button</a>
+                        </div>
+                        <form data-ng-controller="Form">
+                            <fieldset>
+                                <div class="form-row">
+                                    <label for="title">Title:</label>
+                                    <input type="text" id="title" data-ng-model="notification.detail.title" />
+                                </div>
+                                <div class="form-row">
+                                    <label for="body">Title:</label>
+                                    <textarea id="body" data-ng-model="notification.detail.body"></textarea>
+                                </div>
+                                <div class="form-row">
+                                    <label for="category">Category:</label>
+                                    <select id="category" data-ng-model="notification.detail.category">
+                                        <option>info</option>
+                                        <option>warning</option>
+                                        <option>error</option>
+                                    </select>
+                                </div>
+                                <div class="btn-holder">
+                                    <a href="#" class="btn" data-ng-click="invokeNotification($event)">Invoke notification!</a>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="context">
+                        <notification-provider></notification-provider>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="holder">
+                <div class="footer-block">
+                    <a href="/" class="footer-logo">Footer-logo</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="popup" data-modal="1">
+        <p>Modal window.</p>
+        <p>Press X to close.</p>
+        <a href="#" class="close">close</a>
+    </div>
+    <div class="shadow"></div>
+    <script src="js/app.js"></script>
+</body>
+</html>
